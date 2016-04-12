@@ -1,0 +1,9 @@
+[submodule "orchestrator-main"]
+	path = orchestrator-main
+	url = https://github.com/netgroup-polito/frog4-orchestrator.git
+[submodule "orchestrator-domain-openflow"]
+	path = orchestrator-domain-openflow
+	url = https://github.com/netgroup-polito/frog4-openflow-do.git
+[submodule "service-layer"]
+	path = service-layer
+	url = https://github.com/netgroup-polito/frog4-service-layer.git
