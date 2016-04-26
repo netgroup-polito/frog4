@@ -1,6 +1,6 @@
 # The FROG (v.4)
 
-![](https://github.com/netgroup-polito/frog4/tree/master/images/frog.jpg)
+![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg)
 
 The FROG is a software that is able to orchestrate NFV/cloud services across multiple heterogeneous domains.
 The FROG is based on multiple domain orchestrators, each one responsible of a single infrastructure domain, that cooperate by timely exporting the capabilities and the available resources in each domains to an overarching orchestrator, which has to coordinate the deployment of the service across the entire infrastructure.
@@ -11,7 +11,7 @@ This solution provides a clear advantage when the recipient of the information p
 
 An overview of the architecture, with a possible usage example, is shown in the picture below.
 
-![](https://github.com/netgroup-polito/frog4/tree/master/images/frog-overview.png)
+![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog-overview.png)
 
 
 ## Why FROG?
