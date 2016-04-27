@@ -1,10 +1,8 @@
 # Installing the FROG
 
 ## Getting the code
-The FROG is made by different components, which are developed independently.
-Therefore this repository provides a single point of entry for all the available components, which are available here as GIT submodules.
 
-In order to get the code, you have to clone this repository _and_ all the submodules.
+In order to get the code, you have to clone this repository _and_ all the submodules, which contains the different FROG components.
 This lead to the necessity to clone them in the right folders, under the FROG4 orchestrator root.
 For this, please follow the steps below:
 
@@ -16,4 +14,6 @@ At the end of the process you will find all the source code of the FROG4 composi
 You can move in the independent subfolders and follow the instructions in there to compile and launch them.
 
 ## Installing and launching the FROG
+
 Please follow the appropriate README files in each subfolder in order to compile and launch each component.
+Please note that you are nor required to use all the component at the same time, as this depends on your particular network/service setup.
