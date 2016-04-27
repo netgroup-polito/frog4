@@ -21,9 +21,11 @@ An overview of the architecture, with a possible usage example, is shown in the 
 The FROG is made by different components, which are developed independently. Therefore this repository provides a single point of entry for all the available components, which are available here as GIT submodules.
 
 Particulatly, the FROG includes the following components:
-  * [FROG orchestrator] (https://github.com/netgroup-polito/frog4-orchestrator/): overarching orchestrator, which controls different infrastructure domains.
-  * [FROG OpenFlow Domain Orchestrator] (https://github.com/netgroup-polito/frog4-openflow-do/): domain orchestrator, it can control a pure OpenFlow domain (either using ONOS or OpenDayLight).
-  * [FROG User-Defined Service Functions - Service Layer] (https://github.com/netgroup-polito/frog4-service-layer/): one of the possible service layer. This component deploys an _authentication graph_, forcing all the user devices (e.g., laptops) to be redirected to a captive portal to authenticate the user itself. When this happens, this component asks the orchestrator to deploy a user-specific graph and redirects all the user traffic to it.
+  * [FROG orchestrator] (http://github.com/netgroup-polito/frog4-orchestrator/): overarching orchestrator, which controls different infrastructure domains.
+  * [FROG OpenFlow Domain Orchestrator] (http://github.com/netgroup-polito/frog4-openflow-do/): domain orchestrator, it can control a pure OpenFlow domain (either using ONOS or OpenDayLight).
+  * [FROG User-Defined Service Functions (Service Layer)] (http://github.com/netgroup-polito/frog4-service-layer/): one of the possible service layer. This component deploys an _authentication graph_, forcing all the user devices (e.g., laptops) to be redirected to a captive portal to authenticate the user itself. When this happens, this component asks the orchestrator to deploy a user-specific graph and redirects all the user traffic to it.
+
+In addition, the [Universal Node] (http://github.com/netgroup-polito/un-orchestrator) is compatible with the FROG orchestrator as well, hence you can use that component to setup one (or more) compute nodes that is controlled by the orchestrator.
 
 ## Why FROG?
 
