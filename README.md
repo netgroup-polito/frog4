@@ -2,6 +2,8 @@
 
 ![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg)
 
+## What is FROG?
+
 The FROG is a software that is able to orchestrate NFV/cloud services across multiple heterogeneous domains.
 The FROG is based on multiple domain orchestrators, each one responsible of a single infrastructure domain, that cooperate by timely exporting the capabilities and the available resources in each domains to an overarching orchestrator, which has to coordinate the deployment of the service across the entire infrastructure.
 Supported domains include not only traditional infrastructures with network (e.g., OpenFlow only) or compute (e.g., OpenStack) capabilities, but also resource-limited SOHO home gateways, properly extended to make it compatible with the FROG orchestrator. The set of capabilities and resources exported by each single domain, coupled with the constraints specified by the service itself (e.g., the IPsec client endpoint must stay on the tenant home gateway and not on the data centre) determines how the orchestrator splits the service graph, originating the proper set of sub-graphs that are deployed on the selected infrastructure domains.
@@ -14,7 +16,17 @@ An overview of the architecture, with a possible usage example, is shown in the 
 ![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog-overview.png)
 
 
+## Which are the FROG components?
+
+The FROG is made by different components, which are developed independently. Therefore this repository provides a single point of entry for all the available components, which are available here as GIT submodules.
+
+Particulatly, the FROG includes the following components:
+  * [FROG orchestrator] (https://github.com/netgroup-polito/frog4-orchestrator/): overarching orchestrator, which controls different infrastructure domains.
+  * [FROG OpenFlow Domain Orchestrator] (https://github.com/netgroup-polito/frog4-openflow-do/): domain orchestrator, it can control a pure OpenFlow domain (either using ONOS or OpenDayLight).
+  * [FROG User-Defined Service Functions - Service Layer] (https://github.com/netgroup-polito/frog4-service-layer/): one of the possible service layer. This component deploys an _authentication graph_, forcing all the user devices (e.g., laptops) to be redirected to a captive portal to authenticate the user itself. When this happens, this component asks the orchestrator to deploy a user-specific graph and redirects all the user traffic to it.
+
 ## Why FROG?
+
 The FROG (Flexible and pROGrammable router) is a project started at the Computer Networks group ([Netgroup](http://netgroup.polito.it)) of ([Politecnico di Torino](http://www.polito.it)) back in 2012. Since then, the project evolved with different incarnations and has now become a cloud/NFV orchestrator. Hence, the original name, which includes the term 'router' is no longer appropriate, but we keep this name to remind us where this project comes from.
 
 In a nutshell:
