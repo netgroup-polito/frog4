@@ -7,3 +7,6 @@
 [submodule "service-layer"]
 	path = service-layer
 	url = https://github.com/netgroup-polito/frog4-service-layer.git
+[submodule "orchestrator-domain-openstack"]
+	path = orchestrator-domain-openstack
+	url = https://github.com/netgroup-polito/frog4-openstack-do.git
