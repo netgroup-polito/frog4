@@ -13,6 +13,9 @@ For this, please follow the steps below:
 At the end of the process you will find all the source code of the FROG4 composing components.
 You can move in the independent subfolders and follow the instructions in there to compile and launch them.
 
+Please note that the `submodule update` command retrieves a specific version of the given submodule, which may be well behind the latest commit. This is to guarantee that the code in the submodule is aligned and works with the rest of the system.
+Therefore, if you are a programmer and you plan to modify the source code of a specific submodule, please make sure to upgrade the submodule to the latest version first.
+
 ## Installing and launching the FROG
 
 Please follow the appropriate README files in each subfolder in order to compile and launch each component.
