@@ -9,5 +9,7 @@ This solution provides a clear advantage when the recipient of the information p
 
 More information can be found in the [FROGv4 wiki] (https://github.com/netgroup-polito/frog4/wiki/).
 
-    ![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg)
+<div style="text-align:center"><img src ="https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg"/></div>
+
+![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg)
 
