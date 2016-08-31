@@ -1,4 +1,4 @@
-# The FROG (v.4)
+# The FROG (v.4) [(Wiki)] (https://github.com/netgroup-polito/frog4/wiki/)
 
 The FROG is a NFV/cloud service orchestrator that supports multiple heterogeneous domains.
 
@@ -12,9 +12,9 @@ Supported domains include **SDN/OpenFlow** network infrastructures, traditional 
 The FROG orchestration architecture heavily relies on an intermediate **message bus**, which complements the traditional REST API to interconnect the different components.
 This solution provides a clear advantage when the recipient of the information published is not known such as in the bootstrapping process, or when different components (e.g., service layer and orchestrator) need to know the same information coming from the infrastructure domains to perform their job.
 
-The last block of the architecture is the preferred service layer @POLITO, called "_user-defined network functions_", which allows to deploy a complex service based on a set of events occurring in the infrastructure. However, the above service layer is only a proof of concept and can be replaced by other service layers, while the orchestration architecture is service-independent and is able to orchestrate whatever request coming as a service graph.
+The last block of the architecture is the preferred service layer @POLITO, called "*user-defined network functions*", which allows to deploy a complex service based on a set of events occurring in the infrastructure. However, the above service layer is only a proof of concept and can be replaced by other service layers, while the orchestration architecture is service-independent and is able to orchestrate whatever request coming as a service graph.
 
-For who is interested, more information is available in the [FROGv4 wiki] (https://github.com/netgroup-polito/frog4/wiki/).
+More information is available in the [FROG wiki] (https://github.com/netgroup-polito/frog4/wiki/).
 
 ![](https://raw.githubusercontent.com/netgroup-polito/frog4/master/images/frog.jpg)
 
