@@ -1,5 +1,11 @@
 # The FROG (v.4) [(Wiki)] (https://github.com/netgroup-polito/frog4/wiki/)
 
+## Live playground
+
+For who is interested to play with this software without having to install everything, a live playground is available [here](https://github.com/netgroup-polito/frog4/wiki/Live-playground).
+
+## Overview
+
 The FROG is a NFV/cloud service orchestrator that supports multiple heterogeneous domains.
 
 The FROG is made of several components.
