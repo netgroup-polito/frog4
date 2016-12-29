@@ -6,7 +6,7 @@ For who is interested to play with this software without having to install every
 
 ## Overview
 
-The FROG is a NFV/cloud service orchestrator that supports multiple heterogeneous domains.
+The FROG is a SDN/NFV/cloud service orchestrator that supports multiple heterogeneous domains.
 
 The FROG is made of several components.
 Given that a complex infrastructure is composed by several domains (e.g., SDN/OpenFlow network, OpenStack cloud), each (homogeneous) infrastructure domain is handled by a dedicated FROG domain orchestrator.
