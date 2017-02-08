@@ -10,3 +10,6 @@
 [submodule "orchestrator-domain-openstack"]
 	path = orchestrator-domain-openstack
 	url = https://github.com/netgroup-polito/frog4-openstack-do.git
+[submodule "orchestrator-domain-universal-node"]
+	path = orchestrator-domain-universal-node
+	url = https://github.com/netgroup-polito/un-orchestrator
