@@ -21,4 +21,4 @@ Therefore, if you are a programmer and you plan to modify the source code of a s
 Please follow the appropriate README files in each subfolder in order to compile and launch each component.
 Please note that you are not required to use all the component at the same time, as this depends on your particular network/service setup.
 Mandatory components are: the `orchestrator`, the `datastore`, at least one domain orchestrator, and the [Double Docker broker](https://github.com/Acreo/DoubleDecker).
-Please note that, although domain orchestrator may state to install the datastore and the broker, just one installation of those components is needed to make the FROG system working.
+Please note that, although domain orchestrators may state to install the datastore and the broker, just one installation of those components is needed to make the FROG system working.
