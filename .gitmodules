@@ -13,3 +13,6 @@
 [submodule "orchestrator-domain-universal-node"]
 	path = orchestrator-domain-universal-node
 	url = https://github.com/netgroup-polito/un-orchestrator
+[submodule "datastore"]
+	path = datastore
+	url = https://github.com/netgroup-polito/frog4-datastore
