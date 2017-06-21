@@ -18,11 +18,23 @@ Clone the code and install the broker (together its dependencies):
     $ sudo make install
     $ sudo ldconfig
 
-Generate the keys with ddkeys.py (inside the python/build/scripts-3.4 folder) giving an empty list of customers when requested:
+To install the generator for the keys to be used on the message bus, execute the following commands:
 
-    $ sudo python3.4 ddkeys.py
+    #install dependencies 
+    $ sudo apt-get update
+    $ sudo apt-get install python3-setuptools python3-nacl python3-zmq python3-urwid python3-tornado
+    $ git clone https://github.com/Acreo/DoubleDecker-py.git
+    $ cd DoubleDecker-py
+    $ sudo python3 setup.py install
+    
+    # generate public/private keys
+    $ cd ..
+    $ mkdir dd-keys
+    $ cd dd-keys
+    # create keys for 4 tenants, public, tenant a, b, and c
+    $ ddkeys.py (input "a,b,c")
 
-The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them.
+The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them. The keys are stored in the files ``broker-keys.json'' and ``public-keys.json''.
 
 ## Datastore
 The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the VNF templates, images, service descriptions and more.
