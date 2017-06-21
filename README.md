@@ -21,18 +21,19 @@ An overview of the architecture, with a possible usage example, is shown in the 
 
 ## Main FROG components
 
-The FROG is made by different components, which are developed independently. Therefore this repository provides a single point of entry for all of them, which are available here as GIT submodules.
-
-Particularly, the FROG includes the following components:
+The FROG is made by different components, which are developed independently:
   * [FROG orchestrator](http://github.com/netgroup-polito/frog4-orchestrator/): overarching orchestrator, which controls different infrastructure domains.
   * [FROG OpenStack Domain Orchestrator](http://github.com/netgroup-polito/frog4-openstack-do/): domain orchestrator, it can control an OpenStack domain.
   * [FROG OpenFlow Domain Orchestrator](http://github.com/netgroup-polito/frog4-openflow-do/): domain orchestrator, it can control a pure OpenFlow domain (either using ONOS or OpenDayLight).
   * [FROG User-Defined Service Functions (Service Layer)](http://github.com/netgroup-polito/frog4-service-layer/): one of the possible service layer. This component deploys an _authentication graph_, forcing all the user devices (e.g., laptops) to be redirected to a captive portal to authenticate the user itself. When this happens, this component asks the orchestrator to deploy a user-specific graph and redirects all the user traffic to it.
+  * [FROG datastore](https://github.com/netgroup-polito/frog4-datastore): repository that contains VNF templates and images, network functions forwarding graphs, and more.
+  * [FRGO WEB UI](https://github.com/netgroup-polito/fg-gui): web interface that allows to create, modify and view complex virtualized service graphs. It can interact both with the FROG orchestrator and with the specific domain orchestrator.
 
 In addition, the FROG orchestrator is compatible with the [Universal Node](http://github.com/netgroup-polito/un-orchestrator) as well, hence you can use that component to bring one (or more) compute nodes, such as home gateways, as part of the controlled infrastructure.
 
-The FROG architecture relies on an intermediate message bus to interconnect the different components.
+The FROG architecture relies on [DoubleDecker](https://github.com/Acreo/DoubleDecker), an intermediate message bus to interconnect the different components.
 This solution provides a clear advantage when the recipient of the information published is not known such as in the bootstrapping process, or when different components (e.g., service layer and orchestrator) need to know the same information coming from the infrastructure domains to perform their job.
+
 All FROG components expose also a REST API to play with, whose description is available (after installing the selected component) at the URL `http://{component_address}:{component_port}/apidocs/index.html`.
 
 ## Additional documentation
