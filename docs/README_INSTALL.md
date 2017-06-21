@@ -3,7 +3,7 @@
 The FROG4 architecture needs several components to be installed and configured.
 The following instructions have been tested on Ubuntu 15.10 and 16.04.
 
-## Message bus (DoubleDecker Broker) [Mandatory]
+## Message bus (DoubleDecker Broker)
 The message bus (**broker**) used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
 
 ### Install the DoubleDeker Broker
@@ -48,9 +48,9 @@ You will specify the Datastore instance to be used by each compoent in their own
 To install one (or more) Datastore instances and execute them, follow the instructions provided in the [Datastore repository](https://github.com/netgroup-polito/frog4-datastore/).
 
 ## FROG4 orchestrators
-Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
+Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL in each repository. Before launching each component follow the next sections to tune-up the whole system.
 
-### FROG4-orchestrator (**mandatory**).
+### FROG4-orchestrator
 
 Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md).
 
