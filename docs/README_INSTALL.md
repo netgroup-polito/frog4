@@ -26,7 +26,7 @@ Generate the keys with ddkeys.py (inside the python/build/scripts-3.4 folder) gi
 The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them.
 
 ### Datastore repository
-The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the templates of VNFs that you want to instantiate.
+The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the VNF templates, images, service descriptions and more.
 Note that you may want to install a single Datastore used by all the FROG components (i.e., FROG orchestrator and the several domain orchestrators), or you may install a different Datastore for each different component.
 You will specify the Datastore to be used by each compoent, in their own configuration files (instructions will be provided in the specific repositories).
 
