@@ -1,10 +1,9 @@
-# Getting started
+# How to install the FROG4 components
 
-## Getting the code
 The FROG4 architecture needs several components to be installed and configured.
 The following instructions have been tested on Ubuntu 15.10 and 16.04.
 
-### Message bus (DoubleDecker Broker) 
+## Message bus (DoubleDecker Broker) 
 The message bus (**broker**) used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
 
 Clone the code and install the broker (together its dependencies):
@@ -25,7 +24,7 @@ Generate the keys with ddkeys.py (inside the python/build/scripts-3.4 folder) gi
 
 The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them.
 
-### Datastore repository
+## Datastore
 The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the VNF templates, images, service descriptions and more.
 Note that you may want to install a single Datastore used by all the FROG components (i.e., FROG orchestrator and the several domain orchestrators), or you may install a different Datastore for each different component.
 You will specify the Datastore to be used by each compoent, in their own configuration files (instructions will be provided in the specific repositories).
