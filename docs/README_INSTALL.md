@@ -43,8 +43,8 @@ You will specify the Datastore instance to be used by each compoent in their own
 
 To install one (or more) Datastore instances and execute them, follow the instructions provided in the [Datastore repository](https://github.com/netgroup-polito/frog4-datastore/).
 
-### FROG4 components
-Now you have installed all the additional modules needed to properly run the FROG4 architecture. It's time to install the frog4-orchestrator and at least a domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
+## FROG4 orchestrators
+Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
 - Global orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md)
 - OpenFlow domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-openflow-do/blob/master/readme-install.md)
 - OpenStack domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-openstack-do/blob/master/README_INSTALL.md)
