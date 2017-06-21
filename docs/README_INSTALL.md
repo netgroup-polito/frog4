@@ -65,7 +65,10 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 
 ### SDN domain orchestrator
 
-Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README_INSTALL.md)
+Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README_INSTALL.md).
+
+Important considerations:
+* in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
 
 ## WARNINGS
 
