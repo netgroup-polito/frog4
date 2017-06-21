@@ -2,30 +2,22 @@
 
 ## Getting the code
 The FROG4 architecture needs several components to be installed and configured.
+The following instructions have been tested on Ubuntu 15.10 and 16.04.
 
 ### Message bus (DoubleDecker Broker) 
-The message bus used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
+The message bus (**broker**) used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
 
-Clone the code and checkout a specific revision because the python version has not been tested with most recent versions
+Clone the code and install the broker:
 
     $ git clone https://github.com/Acreo/DoubleDecker.git
-    $ cd DobuleDecker 
-    $ git checkout 93ffede
-    $ cd python
-
-Follow these instructions to install dependencies:
-
-    $ sudo apt-get install build-essential python3-dev python3-setuptools python3-pip libffi-dev
-    $ git clone https://github.com/pyca/pynacl
-    $ cd pynacl
-    $ sudo python3.4 setup.py install
-    $ sudo apt-get install python3-zmq
-    $ cd ..
-    $ sudo python3.4 setup.py install
-
-Now you have installed the python ddclient module which is imported in all FROG4 python components. As the broker module you should use the C version because the python version is no longer supported. For this please checkout the master branch:
-
-    $ git checkout master
+    $ cd DobuleDecker
+    $ sudo apt-install wget build-essential libtool  automake pkg-config libjson0-dev libczmq-dev liburcu-dev libsodium-dev 	
+    $ mkdir -pv m4 
+    $ autoreconf --force --install 
+    $ ./configure
+    $ make
+    $ sudo make install
+    $ sudo ldconfig
 
 Generate the keys with ddkeys.py (inside the python/build/scripts-3.4 folder) giving an empty list of customers when requested:
 
