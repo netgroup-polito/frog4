@@ -53,7 +53,10 @@ Now you have installed all the additional modules needed to properly run the FRO
 ### FROG4-orchestrator (**mandatory**).
 
 Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md).
-Please,  note that 
+
+Important considerations:
+* when setting the configuration file, set this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L26 so that it points to the broker previously installed;
+* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L53 must be set so that it points either to the Datastore previously installed, or to a new Datastore;
 
 ### Domain orchestrators
 - SDN domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README.md)
