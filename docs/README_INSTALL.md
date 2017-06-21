@@ -65,7 +65,7 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 
 ### SDN domain orchestrator
 
-Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README.md)
+Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README_INSTALL.md)
 
 ## WARNINGS
 
