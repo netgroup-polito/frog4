@@ -54,7 +54,7 @@ Now you have installed all the additional modules needed to properly run the FRO
 Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md).
 
 Important considerations:
-* in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository;
+* in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
 * when setting the configuration file, set this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L26 so that it points to the broker previously installed;
 * when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L53 must be set so that it points either to the Datastore previously installed, or to a new Datastore;
 * when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L28 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine.
