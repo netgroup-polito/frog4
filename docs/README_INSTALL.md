@@ -58,21 +58,7 @@ Please note that you are not required to use all the component at the same time,
 Mandatory components are: the `orchestrator`, the `datastore`, at least one domain orchestrator, and the [Double Docker broker](https://github.com/Acreo/DoubleDecker).
 Please note that, although domain orchestrators may ask to install the datastore and the broker, just one installation of those components is needed to make the FROG system working.
 
-### Getting the code of the core modules
-
-In order to get the code, you have to clone this repository _and_ all the submodules, which contains the different FROG components.
-This lead to the necessity to clone them in the right folders, under the FROG4 orchestrator root.
-For this, please follow the steps below:
-
-        git clone https://github.com/netgroup-polito/frog4.git
-        cd frog4
-        git submodule init && git submodule update
-
-At the end of the process you will find all the source code of the FROG4 composing components.
-You can move in the independent subfolders and follow the instructions in there to compile and launch them.
-
-Please note that the `submodule update` command retrieves a specific version of the given submodule, which may be well behind the latest commit. This is to guarantee that the code in the submodule is aligned and works with the rest of the system.
-Therefore, if you are a programmer and you plan to modify the source code of a specific submodule, please make sure to upgrade the submodule to the latest version first.
+## WARNINGS
 
 #### Users
 Each orchestrator has its own database and in the repositories there are SQL dumps that include some example users. In this way it is easy to add your own users, paying attention that the same credentials (username, password, tenant) must be present in each database. This is necessary because the global orchestrator forwards the credentials that arrive on its northbound API to the underlying domain orchestrators.
