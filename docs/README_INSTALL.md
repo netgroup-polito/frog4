@@ -59,13 +59,13 @@ Important considerations:
 * when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L53 must be set so that it points either to the Datastore previously installed, or to a new Datastore;
 * when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L28 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine.
 
-### Domain orchestrators
-- SDN domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README.md)
-- OpenStack domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-openstack-do/blob/master/README_INSTALL.md)
+### OpenStack domain orchestrator
 
-Please follow the appropriate README files in each subfolder in order to compile and launch each component.
-Please note that you are not required to use all the component at the same time, as this depends on your particular network/service setup.
-Please note that, although domain orchestrators may ask to install the datastore and the broker, just one installation of those components is needed to make the FROG system working.
+Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-openstack-do/blob/master/README_INSTALL.md). 
+
+### SDN domain orchestrator
+
+Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README.md)
 
 ## WARNINGS
 
