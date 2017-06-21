@@ -29,7 +29,7 @@ The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used
 You may want to install a single Datastore used by all the FROG components (i.e., FROG orchestrator and the several domain orchestrators), or you may install a different Datastore for each different component; both the options are supported by the FROG4 framework.
 You will specify the Datastore instance to be used by each compoent in their own configuration files (instructions will be provided in the specific repositories).
 
-To install one (or more) Datastore instances, follow the instructions provided in the [Datastore repository](https://github.com/netgroup-polito/frog4-datastore/). You can browse the [sample-templates](https://github.com/netgroup-polito/frog4-datastore/tree/master/sample-templates) folder to see some examples.
+To install one (or more) Datastore instances, follow the instructions provided in the [Datastore repository](https://github.com/netgroup-polito/frog4-datastore/).
 
 ### FROG4 components
 Now you have installed all the additional modules needed to properly run the FROG4 architecture. It's time to install the frog4-orchestrator and at least a domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
