@@ -49,13 +49,12 @@ To install one (or more) Datastore instances and execute them, follow the instru
 
 ## FROG4 orchestrators
 Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
-- FROG4-orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md)
+- FROG4-orchestrator (**mandatory**): [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md)
 - SDN domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-sdn-do/blob/master/README.md)
 - OpenStack domain orchestrator: [README_INSTALL](https://github.com/netgroup-polito/frog4-openstack-do/blob/master/README_INSTALL.md)
 
 Please follow the appropriate README files in each subfolder in order to compile and launch each component.
 Please note that you are not required to use all the component at the same time, as this depends on your particular network/service setup.
-Mandatory components are: the `frog4-orchestrator` and at least one domain orchestrator.
 Please note that, although domain orchestrators may ask to install the datastore and the broker, just one installation of those components is needed to make the FROG system working.
 
 ## WARNINGS
