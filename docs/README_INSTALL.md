@@ -6,7 +6,7 @@ The following instructions have been tested on Ubuntu 15.10 and 16.04.
 ## Message bus (DoubleDecker Broker) 
 The message bus (**broker**) used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
 
-###Install the DoubleDeker Broker
+### Install the DoubleDeker Broker
 
 Clone the code and install the broker (together its dependencies):
 
