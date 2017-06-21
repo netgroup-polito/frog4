@@ -32,7 +32,7 @@ To install the generator for the keys to be used on the message bus, execute the
     $ mkdir dd-keys
     $ cd dd-keys
     # create keys for 4 tenants, public, tenant a, b, and c
-    $ ddkeys.py (input "a,b,c")
+    $ ddkeys.py
 
 The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them. The keys are stored in the files "broker-keys.json" and "public-keys.json".
 
