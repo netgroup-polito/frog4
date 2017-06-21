@@ -1,6 +1,6 @@
 # The FROG (v.4)
 
-The FROG is a SDN/NFV/cloud service orchestrator that supports multiple heterogeneous domains.
+The FROG is a SDN/NFV/cloud orchestration architecture that supports multiple heterogeneous domains.
 
 The FROG is made of several components.
 Given that a complex infrastructure is composed by several domains (e.g., SDN/OpenFlow network, OpenStack cloud), each (homogeneous) infrastructure domain is handled by a dedicated FROG domain orchestrator.
@@ -36,4 +36,7 @@ This solution provides a clear advantage when the recipient of the information p
 All FROG components expose also a REST API to play with, whose description is available (after installing the selected component) at the URL `http://{component_address}:{component_port}/apidocs/index.html`.
 
 ## Additional documentation
-Additional documentation, such as installation instructions, etc, is available in the [docs](docs) folder. 
+Additional documentation, such as installation instructions, etc, is available in the [docs](docs/) folder. 
+
+## Events and demos
+The FROG has been showcased in multiple events and demos; some examples can be found in the [events](events/) folder.
