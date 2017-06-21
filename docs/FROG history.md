@@ -1,0 +1,9 @@
+# FROG History
+
+The FROG (Flexible and pROGrammable router) is a project started at the [Computer Networks group ](http://netgroup.polito.it) of [Politecnico di Torino](http://www.polito.it) back in 2012. Since then, the project evolved with different incarnations and has now become a cloud/NFV orchestrator. Hence, the original name, which includes the term 'router' is no longer appropriate, but we keep this name to remind us where this project comes from.
+
+In a nutshell:
+  * FROG v.1 (2012): first original idea, proof-of-concept implementation. OpenFlow was used to send the traffic to a controller, where all the processing was done.
+  * FROG v.2 (2013-2014): second release of the idea, implemented through a dedicated platform, written from scratch. Impressive results with respect to scalability and agility, but not compatible with existing cloud services.
+  * FROG v.3 (2014-2015): from a dedicated box to provide NFV services, we moved to an overarching orchestrator that is able to control different domains, in particular OpenStack. The service logic resides in the Orchestrator, while the data plane is implemented by OpenStack. The biggest problem is that OpenStack has been found not the best choice for network-intensive tasks, such as NFV services, nor for infrastructures distributed across a wide area domain.
+  * FROG v.4 (2015-): the current incarnation of the project keeps the focus on an overarching orchestrator, but it adds the capability to control different heterogeneous domains (e.g., OpenStack). FROG v4 (partially) returns back to the origins by adding a new component, the [Universal Node](http://github.com/netgroup-polito/un-orchestrator), which is an optimized server (a.k.a. *compute node*) for cloud and NFV services. In addition, FROG v.4 uses a message bus to provide connectivity between the different components, which simplifies the routing of control messages.
