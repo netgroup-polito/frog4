@@ -7,7 +7,7 @@ The following instructions have been tested on Ubuntu 15.10 and 16.04.
 ### Message bus (DoubleDecker Broker) 
 The message bus (**broker**) used in the FROG4 architecture is the [DoubleDecker](https://github.com/Acreo/DoubleDecker) software.
 
-Clone the code and install the broker:
+Clone the code and install the broker (together its dependencies):
 
     $ git clone https://github.com/Acreo/DoubleDecker.git
     $ cd DobuleDecker
@@ -26,9 +26,11 @@ Generate the keys with ddkeys.py (inside the python/build/scripts-3.4 folder) gi
 The utility will create the keys used by the broker (broker-keys.json) and by all FROG4 components (frog4-orchestrator and all domain orchestrators). You can use the public-keys.json file for all of them.
 
 ### Datastore repository
-The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all FROG4 components to retrieve the templates of VNFs that you want to instantiate.
+The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the templates of VNFs that you want to instantiate.
+Note that you may want to install a single Datastore used by all the FROG components (i.e., FROG orchestrator and the several domain orchestrators), or you may install a different Datastore for each different component.
+You will specify the Datastore to be used by each compoent, in their own configuration files (instructions will be provided in the specific repositories).
 
-Follow the instructions provided in the repository to install this module. You can browse the [sample-templates](https://github.com/netgroup-polito/frog4-datastore/tree/master/sample-templates) folder to see some examples.
+To install one (or more) Datastore, follow the instructions provided in the [repository](https://github.com/netgroup-polito/frog4-datastore/). You can browse the [sample-templates](https://github.com/netgroup-polito/frog4-datastore/tree/master/sample-templates) folder to see some examples.
 
 ### FROG4 components
 Now you have installed all the additional modules needed to properly run the FROG4 architecture. It's time to install the frog4-orchestrator and at least a domain orchestrator. For this, please refer to the specific README_INSTALL file skipping the DoubleDecker section if you have followed the [message bus section](#message-bus) in this page. Before launching each component follow the next sections to tune-up the whole system.
