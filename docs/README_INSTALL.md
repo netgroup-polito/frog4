@@ -70,7 +70,7 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 Important considerations:
 * in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
 
-## WARNINGS
+### WARNINGS
 
 #### Users
 Each orchestrator has its own database and in the repositories there are SQL dumps that include some example users. In this way it is easy to add your own users, paying attention that the same credentials (username, password, tenant) must be present in each database. This is necessary because the global orchestrator forwards the credentials that arrive on its northbound API to the underlying domain orchestrators.
