@@ -78,6 +78,16 @@ Each orchestrator has its own database and in the repositories there are SQL dum
 #### Domain description
 Each domain orchestrator maintains and publishes a description of its resources. The description includes the nodes/interfaces of each domain that may be used to reach other domains, including the supported technologies (e.g, GRE tunnels, VLAN). When a domain orchestrator sends the description to the message bus for the first time the global orchestrator becomes aware of such domain and learns how to contact it. Resources descriptions examples can be found in the config directory of each domain orchestrator repository. It is important to set the domain orchestrator IP and port in the *management-address* field, to choose a domain name in the *name* field and to describe each interface. These information will be used by the global orchestrator to eventually split and deploy over multiple domains an incoming service graph.
 
+## FROG$ web GUI
+
+It is possibile to add a [GUI](https://github.com/netgroup-polito/fg-gui) on top of the FROG4-orchestrator and of each domain orchestrator (note that you have to use a differert GUI instance for each component).
+The GUI can be used to:
+* draw a service graph (on load it from an external file) and deploy it through the interaction with the underlying orchestrator
+* view and modify service graphs already deployed, through teh interaction with the underlying orchestrator
+* upload NF images and templates in the Datastore.
+
+To install one (or more) FROG ewb GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
+
 ## Running
 - First of all you have to launch the message broker:
    - Change the parameters according to your needs.
