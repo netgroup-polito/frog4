@@ -88,6 +88,9 @@ The GUI can be used to:
 
 To install one (or more) FROG web GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
 
+Important considerations:
+* when setting the configuration file, these lines https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L22-L23 and https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L28-L29 must be set to point either to the Datastore previously installed, or to a new Datastore;
+
 ## Running
 - First of all you have to launch the message broker:
    - Change the parameters according to your needs.
