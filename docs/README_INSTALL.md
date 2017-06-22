@@ -86,7 +86,7 @@ The GUI can be used to:
 * view and modify service graphs already deployed, through teh interaction with the underlying orchestrator
 * upload NF images and templates in the Datastore.
 
-To install one (or more) FROG ewb GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
+To install one (or more) FROG web GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
 
 ## Running
 - First of all you have to launch the message broker:
