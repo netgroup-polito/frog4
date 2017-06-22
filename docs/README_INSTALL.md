@@ -56,8 +56,8 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 Important considerations:
 * in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
 * when setting the configuration file, set this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L26 so that it points to the broker previously installed;
-* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L53 must be set so that it points either to the Datastore previously installed, or to a new Datastore;
-* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L28 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine.
+* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L28 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
+* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-orchestrator/blob/master/config/default-config.ini#L53 must be set so that it points either to the Datastore previously installed, or to a new Datastore.
 
 ### OpenStack domain orchestrator
 
@@ -69,6 +69,9 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 
 Important considerations:
 * in case you install the SDN domain orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDeker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
+* when setting the configuration file, enable the connection to the broker (line XXX) and set this line XXX so that it points to the broker previously installed;
+* when setting the configuration file, this line XXX must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
+* the SDN domain orchestrator does not use the FROG4 datastore. Information about available NF are retrieve directly from the underlying SDN controller (i.e., ONOS).
 
 ### WARNINGS
 
