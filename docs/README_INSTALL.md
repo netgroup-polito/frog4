@@ -103,13 +103,20 @@ Important considerations:
 Each domain orchestrator maintains and publishes a description of its resources. The description includes the nodes/interfaces of each domain that may be used to reach other domains, including the supported technologies (e.g, GRE tunnels, VLAN). When a domain orchestrator sends the description on the message bus for the first time, the FROG orchestrator becomes aware of such domain and learns how to contact it. Resources descriptions examples can be found in the config directory of each domain orchestrator repository. 
 Particularly, it is important to set the domain orchestrator IP and port in the *management-address* field, to choose a domain name in the *name* field and to describe each interface. These information will be used by the FROG orchestrator to eventually split and deploy over multiple domains an incoming service graph.
 
-## Running
-- First of all you have to launch the message broker:
+# Running
+
+In order to start the FROG framework, run the components previously installed in the following order:
+
+- Launch the message broker:
    - Change the parameters according to your needs.
 
             $ ddbroker -k broker-keys.json -r tcp://127.0.0.1:5555 -s 0/0/0
-- Launch the global orchestrator: [How to run](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md#run-the-orchestrator)
-- Launch the domain orchestrator(s) following the appropriate section in the respective README_INSTALL file.
+            
+ - Launch the Datastore as described [here](https://github.com/netgroup-polito/frog4-datastore/blob/master/README.md#run-it)
+            
+- Launch the FROG orchestrator: [How to run](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md#run-the-orchestrator)
+
+- Launch the domain orchestrator(s), and the associated GUIs, following the appropriate section in the respective README_INSTALL file.
 
 
 
