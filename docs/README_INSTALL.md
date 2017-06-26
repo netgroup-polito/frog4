@@ -67,7 +67,7 @@ Important considerations:
 * in case you install the OpenStack domain orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDecker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the OpenStack domain orchestrator repository) and install it again;
 * when setting the configuration file, set this line https://github.com/netgroup-polito/frog4-openstack-do/blob/master/config/default-config.ini#L68 so that it points to the broker previously installed;
 * when setting the configuration file, this line https://github.com/netgroup-polito/frog4-openstack-do/blob/master/config/default-config.ini#L69 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
-* the OpenStack domain orchestrator uses the the Datastore to keep the network function templates. Then, you have to set this line https://github.com/netgroup-polito/frog4-openstack-do/blob/master/config/default-config.ini#L98 to thatit points to the Datastore previously installed.
+* the OpenStack domain orchestrator uses the the Datastore to keep the network function templates. Then, you have to set this line https://github.com/netgroup-polito/frog4-openstack-do/blob/master/config/default-config.ini#L98 so that it points to the Datastore previously installed.
 
 ### SDN domain orchestrator
 
