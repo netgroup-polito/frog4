@@ -50,7 +50,7 @@ To install one (or more) Datastore instances and execute them, follow the instru
 Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL in each repository. Before launching each component follow the next sections to tune-up the whole system.
 
 #### Users
-Each orchestrator (i.e., FROG orchestrator, SDN domain orchestrator, OpenStack domain orchestrator, universal node)  has its own database that, among other information, contains the users enabled to interact with such an orchestrator (i.e., their username and password).
+Each orchestrator (i.e., FROG orchestrator, SDN domain orchestrator, OpenStack domain orchestrator, universal node)  has its own database that, among other information, contains the users enabled to interact with the orchestrator itself (i.e., their username and password).
 Then, while deploying the orchestrators that are part of the FROG architecture, please add the same user(s) in each one of the databases.
 To this purpose, you can follow the instructions provided in each repository.
 
