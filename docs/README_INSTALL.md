@@ -49,6 +49,24 @@ To install one (or more) Datastore instances and execute them, follow the instru
 ## FROG4 orchestrators
 Now you have installed all the additional modules needed to properly run the FROG4 framework. It's time to install the frog4-orchestrator and at least one domain orchestrator. For this, please refer to the specific README_INSTALL in each repository. Before launching each component follow the next sections to tune-up the whole system.
 
+#### Users
+Each orchestrator (i.e., FROG orchestrator, SDN domain orchestrator, OpenStack domain orchestrator, universal node)  has its own database that, among other information, contains the users enabled to interact with such an orchestrator (i.e., their username and password).
+Then, while deploying the orchestrators that are part of the FROG architecture, please add the same user(s) in each one of the databases.
+To this purpose, you can follow the instructions provided in each repository.
+
+### FROG4 web GUI
+
+It is possibile to add a [GUI](https://github.com/netgroup-polito/fg-gui) on top of the FROG4-orchestrator and of each domain orchestrator (note that you have to use a differert GUI instance for each component).
+The GUI can be used to:
+* draw a service graph (on load it from an external file) and deploy it through the interaction with the underlying orchestrator
+* view and modify service graphs already deployed, through teh interaction with the underlying orchestrator
+* upload NF images and templates in the Datastore.
+
+To install one (or more) FROG web GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
+
+Important considerations:
+* when setting the configuration file, these lines https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L22-L23 and https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L28-L29 must be set to point either to the Datastore previously installed, or to a new Datastore;
+
 ### FROG4-orchestrator
 
 Follow the instructions provided in the file [README_INSTALL](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md).
@@ -81,24 +99,9 @@ Important considerations:
 
 ### WARNINGS
 
-#### Users
-Each orchestrator has its own database and in the repositories there are SQL dumps that include some example users. In this way it is easy to add your own users, paying attention that the same credentials (username, password, tenant) must be present in each database. This is necessary because the global orchestrator forwards the credentials that arrive on its northbound API to the underlying domain orchestrators.
-
 #### Domain description
-Each domain orchestrator maintains and publishes a description of its resources. The description includes the nodes/interfaces of each domain that may be used to reach other domains, including the supported technologies (e.g, GRE tunnels, VLAN). When a domain orchestrator sends the description to the message bus for the first time the global orchestrator becomes aware of such domain and learns how to contact it. Resources descriptions examples can be found in the config directory of each domain orchestrator repository. It is important to set the domain orchestrator IP and port in the *management-address* field, to choose a domain name in the *name* field and to describe each interface. These information will be used by the global orchestrator to eventually split and deploy over multiple domains an incoming service graph.
-
-## FROG4 web GUI
-
-It is possibile to add a [GUI](https://github.com/netgroup-polito/fg-gui) on top of the FROG4-orchestrator and of each domain orchestrator (note that you have to use a differert GUI instance for each component).
-The GUI can be used to:
-* draw a service graph (on load it from an external file) and deploy it through the interaction with the underlying orchestrator
-* view and modify service graphs already deployed, through teh interaction with the underlying orchestrator
-* upload NF images and templates in the Datastore.
-
-To install one (or more) FROG web GUI, follow the instructions provided in the [FROG4 web GUI repository](https://github.com/netgroup-polito/fg-gui/blob/master/README_INSTALL.md).
-
-Important considerations:
-* when setting the configuration file, these lines https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L22-L23 and https://github.com/netgroup-polito/fg-gui/blob/master/config/default-config.ini#L28-L29 must be set to point either to the Datastore previously installed, or to a new Datastore;
+Each domain orchestrator maintains and publishes a description of its resources. The description includes the nodes/interfaces of each domain that may be used to reach other domains, including the supported technologies (e.g, GRE tunnels, VLAN). When a domain orchestrator sends the description on the message bus for the first time, the FROG orchestrator becomes aware of such domain and learns how to contact it. Resources descriptions examples can be found in the config directory of each domain orchestrator repository. 
+Particularly, it is important to set the domain orchestrator IP and port in the *management-address* field, to choose a domain name in the *name* field and to describe each interface. These information will be used by the FROG orchestrator to eventually split and deploy over multiple domains an incoming service graph.
 
 ## Running
 - First of all you have to launch the message broker:
