@@ -116,7 +116,7 @@ In order to start the FROG framework, run the components previously installed in
             
 - Launch the FROG orchestrator as described [here](https://github.com/netgroup-polito/frog4-orchestrator/blob/master/README_INSTALL.md#run-the-orchestrator)
 
-- Launch the domain orchestrator(s), and the associated GUIs, following the appropriate section in the respective README_INSTALL file.
+- Launch the domain orchestrator(s) and the associated GUIs, following the appropriate section in the respective README_INSTALL file.
 
 
 
