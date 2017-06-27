@@ -37,7 +37,7 @@ To install the generator for the keys to be used on the message bus, execute the
     $ cd dd-keys
     $ ddkeys.py
 
-The utility will create the keys used by the broker (`broker-keys.json`) and by all FROG4 components (`public-keys.json`), o.e., the frog4-orchestrator and all domain orchestrators. 
+The utility will create the keys used by the broker (`broker-keys.json`) and by all FROG4 components (`public-keys.json`), i.e., the frog4-orchestrator and all domain orchestrators. 
 
 ## Datastore
 The [Datastore](https://github.com/netgroup-polito/frog4-datastore/) can be used by all the FROG4 components to retrieve the VNF templates, images, service descriptions and more.
