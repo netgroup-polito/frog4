@@ -12,7 +12,7 @@ Clone the code and install the broker (together its dependencies):
 
     $ git clone https://github.com/Acreo/DoubleDecker.git
     $ cd DobuleDecker
-    $ sudo apt-get install wget build-essential libtool  automake pkg-config libjson0-dev libczmq-dev liburcu-dev libsodium-dev 	
+    $ sudo apt-get install wget build-essential libtool  automake pkg-config libjson0-dev libczmq-dev liburcu-dev libsodium-dev git
     $ mkdir -pv m4 
     $ autoreconf --force --install 
     $ ./configure
