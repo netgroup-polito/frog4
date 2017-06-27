@@ -110,7 +110,7 @@ In order to start the FROG framework, run the components previously installed in
 - Launch the message broker:
    - Change the parameters according to your needs.
 
-            $ ddbroker -k broker-keys.json -r tcp://127.0.0.1:5555 -s 0/0/0
+            $ ddbroker -k broker-keys.json -r tcp://0.0.0.0:5555 -s 0/0/0
             
  - Launch the Datastore as described [here](https://github.com/netgroup-polito/frog4-datastore/blob/master/README.md#run-it)
             
