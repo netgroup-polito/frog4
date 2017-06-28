@@ -94,8 +94,8 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 
 Important considerations:
 * in case you install the SDN domain orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDecker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the SDN domain orchestrator repository) and install it again;
-* when setting the configuration file, enable the connection to the broker (line https://github.com/netgroup-polito/frog4-sdn-do/blob/master/config/default-config.ini#L79) and set this line https://github.com/netgroup-polito/frog4-sdn-do/blob/master/config/default-config.ini#L83 so that it points to the broker previously installed;
-* when setting the configuration file, this line https://github.com/netgroup-polito/frog4-sdn-do/blob/master/config/default-config.ini#L86 must be set so that it points to a local file containing the key to be used on the message bus. Particulrarly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
+* in the configuration file, in the `[messaging]` section, you have to set the `dd_activate` parameter to `true`, and to set the `dd_broker_address` parameter so that it points to the broker previously installed;
+* in the configuration file, in the `[messaging]` section, set the `dd_tenant_key` parameter so that it points to a local file containing the key to be used on the message bus. Particularly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
 * the SDN domain orchestrator does not use the FROG4 datastore. Information about available NFs are retrieve directly from the underlying SDN controller (i.e., ONOS).
 
 ### WARNINGS
