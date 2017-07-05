@@ -74,8 +74,7 @@ Follow the instructions provided in the file [README_INSTALL](https://github.com
 Important considerations:
 * in case you install the FROG4-orchestrator on the same machine where you installed the Broker, you do not have to clone again the [DoubleDecker](https://github.com/Acreo/DoubleDecker-py) repository. However, you have to apply the patch (as described in the FROG4-orchestrator repository) and install it again;
 *  in the configuration file, in the `[doubledecker]` section, set the `broker_address` parameter so that it points to the broker previously installed;
-* in the configuration file, in the `[doubledecker]` section, set the `dd_keyfile` parameter so that it points to a local file containing the key to be used on the message bus. Particularly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine;
-* in the section `[templates]` of the configuration file, you have to set the `datastore_url` parameter so that it points to the Datastore previously installed. 
+* in the configuration file, in the `[doubledecker]` section, set the `dd_keyfile` parameter so that it points to a local file containing the key to be used on the message bus. Particularly, it must point to the file `public-keys.json` generated before. Of course, if you are installing the FROG4-orchestrator on a different machine than that running the broker, you have to copy the `public-keys.json` on the new machine
 
 ### OpenStack domain orchestrator
 
